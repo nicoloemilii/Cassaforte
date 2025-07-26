@@ -36,7 +36,7 @@ Lo sketch Arduino (`cassaforte.ino`) include:
 
 ## 🛠️ Prototipazione
 
-Il progetto è stato realizzato in un primo momento sul programma di simulazione Tinkercad e successivamente è stato realizzato su breadbord. In oltre è stata realizzata anche la struttura mediante stampa 3D. Il progetto può essere scaricato dal seguente link --> https://www.thingiverse.com/thing:7100183
+Il progetto è stato realizzato in un primo momento sul programma di simulazione Tinkercad e successivamente è stato realizzato su breadbord. Inoltre è stata realizzata anche la struttura mediante stampa 3D. Il progetto può essere scaricato dal seguente link --> https://www.thingiverse.com/thing:7100183
 
 ## 👨‍💻 Autore
 
