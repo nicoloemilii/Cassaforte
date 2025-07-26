@@ -27,7 +27,7 @@ La cassaforte funziona tramite:
 
 ## 💾 Codice
 
-Lo sketch Arduino (`cassaforte.ino`) include:
+Lo sketch Arduino (`codice_cassaforte.ino`) include:
 - Lettura input da tastiera
 - Verifica della password
 - Comando del servo per apertura/chiusura
