@@ -5,20 +5,22 @@ Questo progetto mostra il funzionamento di una **cassaforte elettronica** realiz
 ## ⚙️ Funzionamento
 
 La cassaforte funziona tramite:
-- Inserimento di un codice PIN tramite tastierino 4x4
+- Inserimento di un codice PIN tramite tastierino
 - Verifica del codice: se corretto, apertura tramite servo
 - Se errato, viene registrato un tentativo fallito
 - Dopo 5 tentativi sbagliati, scatta un allarme (LED rosso lampeggiante)
 
 ## 🧩 Componenti utilizzati
 
-- Arduino UNO
-- Tastiera 4x4
-- Servo motore SG90
-- LED rosso e verde
-- Buzzer piezoelettrico
-- Display LCD (opzionale)
-- Resistenze
+- N.1 Potenziometro 10kΩ
+- N.3 Resistori 220Ω
+- N.1 KeyPad 4x4
+- N.1 Servo motore
+- N.1 Diodo LED Rosso
+- N.1 Diodo LED Verde
+- N.1 Display LCD 16x2
+- N.1 Buzzer passivo
+- N.1 Arduino UNO R3
 
 ## 💾 Codice
 
