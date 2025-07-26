@@ -21,7 +21,7 @@ const int rosso = 13;
 
 
 
-  //------------------------------------ Inizializzazione tastiera
+  //------------------------------------ Keyboard initialization
 char keys[righe][colonne] = {
   {'1','2','3'},
   {'4','5','6'},
@@ -33,13 +33,13 @@ byte pinrighe[righe] = {8, 7, 6, 5};
 byte pincolonne[colonne] = {4, 3, 2};
 Keypad tastiera = Keypad(makeKeymap(keys), pinrighe, pincolonne, righe, colonne);
 
-  //------------------------------------ Inizializzazione display
+  //------------------------------------ Display initialization
 const int rs = 14, en = 15, d4 = 16, d5 = 17, d6 = 18, d7 = 19;
 LiquidCrystal lcd (rs, en, d4, d5, d6, d7);
 
-  //------------------------------------ Inizializzazione servo
+  //------------------------------------ Servo initialization
 Servo myservo;
-// 80° aperto
+// 80° open
 
 byte lucchettoChiuso[8] = {
   0b01110,
@@ -88,7 +88,7 @@ lcd.createChar(1, lucchettoAperto);
 void loop() {
   INIZIO:
 
-  //---------------------------------------------------------------- Controllo errori
+  //---------------------------------------------------------------- Error checking
 
 
 
@@ -101,16 +101,16 @@ void loop() {
   lcd.print("Inserisci PIN:");
   Serial.println("Inserisci PIN:");
   lcd.setCursor(0,1);
-  //--------------------------------- Inserimento codice
+  //--------------------------------- Enter code
   inserimento_cod();
  
   if(cod_ins == codice){
-    //--------------------------------- Codice esatto
+    //--------------------------------- Exact code
     lcd.setCursor(0,1);
     lcd.print("Codice esatto");
     Serial.println("Codice esatto");
     delay(500);
-    //--------------------------------- Gestione porta
+    //--------------------------------- Port Management
     lcd.clear();
     lucchetto();
 
@@ -149,7 +149,7 @@ void loop() {
    
    
     if(cod_ins == cambiocodice){
-    //--------------------------------- Cambio codice
+    //--------------------------------- Code change
     lcd.clear();
    
     lucchetto();
@@ -176,7 +176,7 @@ void loop() {
     delay(500);
       cod_ins = "";
     } else{
-       //--------------------------------- Codice cambio codice errato
+       //--------------------------------- Incorrect code change code
       lcd.clear();
       lucchetto();
 
@@ -313,7 +313,7 @@ for(int i=4; i>0; i--){
     lcd.print("*");
    
 
-    //------------------------------------ Leggo codice
+    //------------------------------------ I read code
   cod_ins = cod_ins + ins;
   }
 }
