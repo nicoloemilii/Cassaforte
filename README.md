@@ -40,6 +40,6 @@ Il progetto è stato realizzato in un primo momento sul programma di simulazione
 
 ## 👨‍💻 Autore
 
-Nicolò Emilii – Progetto scolastico realizzato durante il 5º anno.
+Nicolò Emilii
 
 ---
