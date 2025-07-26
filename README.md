@@ -1,6 +1,6 @@
-# 🔐 Cassaforte elettronica con Arduino
+# 🔐 Cassaforte con Arduino
 
-Questo progetto mostra il funzionamento di una **cassaforte elettronica** realizzata con Arduino. È stato sviluppato in ambito scolastico e utilizza componenti elettronici di base per simulare l'apertura con password.
+Questo progetto mostra il funzionamento di una **cassaforte** realizzata con Arduino. È stata sviluppata utilizzando componenti elettronici di base per simulare l'apertura con password e la stampa 3D per creare la struttura.
 
 ## ⚙️ Funzionamento
 
@@ -8,7 +8,10 @@ La cassaforte funziona tramite:
 - Inserimento di un codice PIN tramite tastierino
 - Verifica del codice: se corretto, apertura tramite servo
 - Se errato, viene registrato un tentativo fallito
-- Dopo 5 tentativi sbagliati, scatta un allarme (LED rosso lampeggiante)
+- Dopo 5 tentativi sbagliati, viene riprodotto dal buzzer un segnale di errore e lampeggia il LED Rosso
+- Dopo aver sbagliato il codice PIN diverse volte di fila, la cassaforte si bloccherà per periodi sempre più lunghi
+- Possibilità di cambiare il codice PIN inserendo il PIN “****”
+- Possibilità di ripristinare il codice PIN alle impostazioni di fabbrica, inserendo il PIN “####” e successivamente il codice univoco di 9 cifre fornito di fabbrica con la cassaforte
 
 ## 🧩 Componenti utilizzati
 
@@ -29,15 +32,14 @@ Lo sketch Arduino (`cassaforte.ino`) include:
 - Verifica della password
 - Comando del servo per apertura/chiusura
 - Gestione allarme con LED e buzzer
+- Gestione interfaccia uomo - macchina
 
 ## 🛠️ Prototipazione
 
-Il progetto è stato realizzato in un primo momento sul programma di simulazione Tinkercad e successivamente è stato realizzato su breadbord. In oltre è stata realizzata anche la struttura mediante stampa 3D. Il progetto può essere scaricato da questo link --> https://www.thingiverse.com/thing:7100183
+Il progetto è stato realizzato in un primo momento sul programma di simulazione Tinkercad e successivamente è stato realizzato su breadbord. In oltre è stata realizzata anche la struttura mediante stampa 3D. Il progetto può essere scaricato dal seguente link --> https://www.thingiverse.com/thing:7100183
 
 ## 👨‍💻 Autore
 
-Nicolò Emilii – Progetto scolastico realizzato nel 5º anno.
+Nicolò Emilii – Progetto scolastico realizzato durante il 5º anno.
 
 ---
-
-🔗 **Nota**: Questo progetto è stato creato per scopi didattici. Non è destinato a un utilizzo in contesti reali di sicurezza.
