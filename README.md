@@ -1,4 +1,3 @@
-# Cassaforte
 # 🔐 Cassaforte elettronica con Arduino
 
 Questo progetto mostra il funzionamento di una **cassaforte elettronica** realizzata con Arduino. È stato sviluppato in ambito scolastico e utilizza componenti elettronici di base per simulare l'apertura con password.
